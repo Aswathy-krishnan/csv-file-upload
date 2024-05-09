@@ -1,0 +1,121 @@
+.outer-container {
+  /* background-color: rgb(143, 119, 119); */
+  display: flex;
+  /* min-height: 100vh; */
+}
+.dashboard {
+  /* background-color: rgb(223, 42, 189); */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+}
+.csv-homepage {
+  background-color: rgb(250, 250, 251);
+  flex: 1;
+}
+.dashboard-base {
+  /* background-color: blue; */
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.link-text-none,
+.link-select-text {
+  text-decoration: none;
+  color: #9a9aa9;
+  font-size: 16px;
+  font-weight: 600;
+}
+.link-select-text {
+  color: blue !important;
+}
+.dashboard-buttons {
+  /* background-color: rgb(255, 255, 255); */
+  flex: 1;
+}
+
+.dashboard-base-image {
+  height: 30px;
+  /* background-color: rgb(96, 91, 255); */
+}
+.csv-homepage {
+  /* background-color: red; */
+  padding-inline: 10px;
+  padding: 20px 30px;
+}
+
+.homepage-sec-1 {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+.user-details {
+  display: flex;
+  gap: 25px;
+  /* padding: 10px; */
+
+  /* background-color: rgb(69, 46, 46); */
+}
+.homepage-heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+.upload-area {
+  height: 200px;
+  border: 2px dashed rgb(234, 217, 217);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-sec {
+  margin-top: 40px;
+
+  padding: 20px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%,-50%); */
+}
+.homepage-sec-2 {
+  display: flex;
+  justify-content: center;
+}
+.upload-button {
+  background-color: #605bff;
+  width: clamp(150px, 40vw, 350px);
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+}
+.file-input {
+  border: 1px solid black;
+  padding: 4px;
+  /* height: 100%; */
+}
+.csv-table table {
+  width: 100%;
+  /* border-collapse: separate;  */
+  /* border-spacing: 5em; */
+}
+.csv-table {
+  background-color: #f5f5f5;
+  padding: 20px 30px;
+}
+.csv-table tbody tr {
+  background-color: white;
+  border-spacing: 5em;
+  height: 50px;
+}
+
+.table-for-space {
+  background-color: transparent !important;
+  height: 8px !important;
+}
+.sub-head {
+  font-size: 24px;
+  font-size: 600;
+  margin-bottom: 5px;
+}

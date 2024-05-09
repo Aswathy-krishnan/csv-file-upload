@@ -1,0 +1,22 @@
+:root {
+  --primary-text-color: black;
+  --link-color: #346bd4;
+  --primary-bg-color: #605bff;
+  --secondary-text-color: #858585;
+  --danger-color:red;
+}
+.p-t-c {
+  color: var(--primary-text-color);
+}
+.s-t-c {
+  color: var(--secondary-text-color);
+}
+.link-color {
+  color: var(--link-color);
+}
+.error-color{
+  color: var(--danger-color);
+}
+.c-pointer{
+  cursor: pointer;
+}

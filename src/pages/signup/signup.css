@@ -1,0 +1,122 @@
+.dashboard-sections {
+  min-height: 100vh;
+  display: flex;
+}
+/* .main{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+} */
+.dashboard-sec-1 {
+  /* background-color: pink; */
+  background-color: #f8faff;
+  background-image: url(/images/bg-1.png);
+  background-size: cover;
+  flex: 1;
+}
+.dashboard-sec-1-inner {
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-base {
+  color: white;
+  font-size: 4rem !important;
+  font-weight: 700;
+}
+.social-media-icons {
+  display: flex ;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  /* background-color: red; */
+  gap: 50px;
+}
+.social-media-icons i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.base-image {
+  /* background-color: rgb(42, 33, 33); */
+  /* width: 80.15px; */
+  height: 50.15px;
+}
+.dashboard-sec-2 {
+  background-color: #f8faff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.sign-in-outer-box {
+  padding: 20px;
+}
+.sign-in-text {
+  font-size: 36px;
+  font-weight: 700;
+}
+.sign-in-account {
+  font-size: 16px;
+  font-weight: 400;
+}
+.sign-in-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.sign-in-button {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-inline: 30px;
+  flex: 1;
+  min-width: 200px;
+  justify-content: center;
+}
+.login-detail-box {
+  padding: 20px 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.link {
+  cursor: pointer;
+}
+.input-field {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+.last-sign-in {
+  background-color: var(--primary-bg-color);
+  border-radius: 10px;
+  padding: 3px;
+  color: white;
+}
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+.base {
+  background-color: var(--primary-bg-color);
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  padding: 20px 15px;
+}
