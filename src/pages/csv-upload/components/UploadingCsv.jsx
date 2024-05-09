@@ -1,16 +1,25 @@
 import React, { useState } from "react";
 import Papa from "papaparse";
-function UploadingCsv({tableData, setTableData}) {
+function UploadingCsv({ tableData, setTableData }) {
   const [fileName, setFileName] = useState("");
-  
+  const [selectedFile, setSelecteFile] = useState(null);
   const handleFileChange = (e) => {
     let files = e.target.files;
     if (!files.length) {
       return;
     }
     let file = files[0];
+    setSelecteFile(file);
+
+    setFileName(file?.name || "");
+    console.log("handel change", e.target.file);
+  };
+  const uploadFile = () => {
+    if (!selectedFile) {
+      return;
+    }
     try {
-      Papa.parse(file, {
+      Papa.parse(selectedFile, {
         complete: function (results) {
           console.log("Finished:", results.data);
           getCsvTableData(results?.data || []);
@@ -19,9 +28,6 @@ function UploadingCsv({tableData, setTableData}) {
     } catch (error) {
       console.log("error in try", error);
     }
-
-    setFileName(file?.name || "");
-    console.log("handel change", e.target.file);
   };
   const getCsvTableData = (datas) => {
     if (!datas.length) {
@@ -74,7 +80,7 @@ function UploadingCsv({tableData, setTableData}) {
         )}
       </div>
       <div>
-        <button className="upload-button">
+        <button className="upload-button" onClick={uploadFile}>
           {" "}
           <i className="bi bi-upload mr-2"></i> Upload
         </button>
@@ -84,7 +90,6 @@ function UploadingCsv({tableData, setTableData}) {
           <li key={i}>{JSON.stringify(x)}</li>
         ))}
       </ul> */}
-
     </div>
   );
 }
